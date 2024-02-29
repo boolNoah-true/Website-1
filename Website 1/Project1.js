@@ -7,7 +7,7 @@ function App() {
         const { clientX, clientY } = event;
         const red = Math.round((clientX / window.innerWidth) * 255);
         const blue = Math.round((clientY / window.innerHeight) * 255);
-        const newColor = `rgb(${red}, 0, ${blue})`; // Using modulo for green to keep the value low
+        const newColor = `rgb(0, 0, ${blue})`; // Using modulo for green to keep the value low
         setColor(newColor);
     };
 
@@ -20,7 +20,7 @@ function App() {
 
     return (
         <h1 className = "title" style={{ color: color }}>
-            Website
+            Noah's Website
         </h1>
     );
 }
